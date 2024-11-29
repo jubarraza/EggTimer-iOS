@@ -131,8 +131,17 @@
                                                 <color key="progressTintColor" systemColor="systemOrangeColor"/>
                                                 <color key="trackTintColor" systemColor="systemGrayColor"/>
                                             </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pie-u5-pI5" userLabel="countdownLabel">
+                                                <rect key="frame" x="187" y="143" width="0.0" height="0.0"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="pie-u5-pI5" firstAttribute="centerX" secondItem="nJN-th-c5K" secondAttribute="centerX" id="Esx-t5-ZWf"/>
+                                            <constraint firstItem="pie-u5-pI5" firstAttribute="centerY" secondItem="Qds-ca-dTL" secondAttribute="centerY" constant="20" id="Ls1-wb-N1g"/>
                                             <constraint firstItem="Qds-ca-dTL" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="Vvh-0Y-c86"/>
                                             <constraint firstItem="Qds-ca-dTL" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" id="xGu-DN-o33"/>
                                             <constraint firstAttribute="trailing" secondItem="Qds-ca-dTL" secondAttribute="trailing" id="zQL-1N-DoQ"/>
@@ -151,6 +160,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countdownLabel" destination="pie-u5-pI5" id="K7p-yq-q7k"/>
                         <outlet property="progressBar" destination="Qds-ca-dTL" id="Syc-Ni-QdB"/>
                         <outlet property="titleLabel" destination="XLm-5r-pSP" id="nPf-qR-kzh"/>
                     </connections>
